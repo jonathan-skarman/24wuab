@@ -1,0 +1,91 @@
+body,
+ul {
+	margin: 0;
+}
+
+header {
+	box-shadow: 5px 0px 10px grey;
+}
+
+.menu {
+	height: 100vh;
+	width: 80vw;
+	background: hotpink;
+	position: fixed;
+	top: 0;
+	right: -90vw;
+	transition: right 0.3s;
+	box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
+	z-index: 10;
+}
+
+.menu-button {
+	cursor: pointer;
+	display: inline;
+}
+
+.menu-button i.material-icons {
+	font-size: 2.5rem;
+}
+
+.show {
+	right: 0;
+}
+
+.fade-layer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	z-index: 5;
+}
+
+.fade-layer.visible {
+	display: block;
+}
+
+@media screen {
+}
+
+@media screen and (min-width: 1024px) {
+	/*for computer*/
+	.wrapper {
+		position: fixed;
+		right: 20vw;
+		width: 80vw;
+
+		display: grid;
+		grid-template-columns: 5% 95%;
+		grid-template-rows: 15% 85%;
+		grid-template-areas:
+			"hd hd"
+			"mg co";
+	}
+
+	.menu-button {
+		display: none;
+	}
+
+	.menu {
+		right: 0;
+		width: 20vw;
+	}
+
+	header {
+		grid-area: hd;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.content {
+		grid-area: co;
+	}
+
+	.marigin {
+		grid-area: mg;
+	}
+}
+
