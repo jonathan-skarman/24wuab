@@ -31,13 +31,24 @@ body {
 header {
 	background-color: rgb(54, 55, 63);
 	box-shadow: 5px 0px 10px black;
+	height: 20vh;
 }
 
 p,
-h1 {
+h1,
+h2{
 	color: rgb(192, 196, 207);
 	font-family: openSans;
 	text-align: center;
+}
+
+.divider {
+	width: 100px;
+	height: 0px;
+	border: 1px;
+	border-style: solid;
+	color: aqua;
+	margin: auto;
 }
 
 nav a {
@@ -94,13 +105,12 @@ margin-top: 1cap;
 @media screen and (max-width: 1023px) {
 	/*for phone*/
 	.wrapper {
-		position: fixed;
+		position: absolute;
 		right: 0px;
 		width: 100vw;
 	}
 
 	header {
-		grid-area: hd;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -117,7 +127,7 @@ margin-top: 1cap;
 @media screen and (min-width: 1024px) {
 	/*for computer*/
 	.wrapper {
-		position: fixed;
+		position: absolute;
 		right: 20vw;
 		width: 80vw;
 

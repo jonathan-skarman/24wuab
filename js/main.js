@@ -8,3 +8,4 @@ function showMenu(){
 	let layer = document.querySelector(".fade-layer");
 	layer.classList.toggle("visible");
 }
+/*hela denna js är snodd från uppgiften där vi byggde en hamburgarmeny*/
