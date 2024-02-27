@@ -40,6 +40,8 @@ h2 {
   color: rgb(192, 196, 207);
   font-family: openSans;
   text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .divider {
