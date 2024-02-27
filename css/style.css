@@ -1,172 +1,172 @@
 @font-face {
-	font-family: openSans;
-	src: url(../misc/open_sans/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-family: openSans;
+  src: url(../misc/open_sans/OpenSans-VariableFont_wdth\wght.ttf);
 }
 
 body,
 ul {
-	margin: 0;
-	overflow-x: hidden;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .content {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
-	/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hide scrollbar for Chrome, Safari and Opera */
 .content::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .content {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 body {
-	background-color: rgb(42, 43, 51);
+  background-color: rgb(42, 43, 51);
 }
 
 header {
-	background-color: rgb(54, 55, 63);
-	box-shadow: 5px 0px 10px black;
-	height: 20vh;
+  background-color: rgb(54, 55, 63);
+  box-shadow: 5px 0px 10px black;
+  height: 20vh;
 }
 
 p,
 h1,
-h2{
-	color: rgb(192, 196, 207);
-	font-family: openSans;
-	text-align: center;
+h2 {
+  color: rgb(192, 196, 207);
+  font-family: openSans;
+  text-align: center;
 }
 
 .divider {
-	width: 100px;
-	height: 0px;
-	border: 1px;
-	border-style: solid;
-	color: aqua;
-	margin: auto;
+  width: 100px;
+  height: 0px;
+  border: 1px;
+  border-style: solid;
+  color: aqua;
+  margin: auto;
 }
 
 nav a {
-	text-decoration: none;
-	color: rgb(192, 196, 207);
-	font-family: openSans;
-	font-size: larger;
+  text-decoration: none;
+  color: rgb(192, 196, 207);
+  font-family: openSans;
+  font-size: larger;
 }
 
 li {
-margin-top: 1cap;
+  margin-top: 1cap;
 }
 
 .menu {
-	height: 100vh;
-	width: 80vw;
-	background: rgb(32, 33, 39);
-	position: fixed;
-	top: 0;
-	right: -90vw;
-	transition: right 0.3s;
-	box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
-	z-index: 10;
+  height: 100vh;
+  width: 80vw;
+  background: rgb(32, 33, 39);
+  position: fixed;
+  top: 0;
+  right: -90vw;
+  transition: right 0.3s;
+  box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
+  z-index: 10;
 }
 
 .menu-button {
-	cursor: pointer;
-	display: inline;
+  cursor: pointer;
+  display: inline;
 }
 
 .menu-button i.material-icons {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .show {
-	right: 0;
+  right: 0;
 }
 
 .fade-layer {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	display: none;
-	z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 5;
 }
 
 .fade-layer.visible {
-	display: block;
+  display: block;
 }
 
 @media screen and (max-width: 1023px) {
-	/*for phone*/
-	.wrapper {
-		position: absolute;
-		right: 0px;
-		width: 100vw;
-	}
+  /*for phone*/
+  .wrapper {
+    position: absolute;
+    right: 0px;
+    width: 100vw;
+  }
 
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
 
-	img {
-		width: 20vw;
-	}
+  img {
+    width: 20vw;
+  }
 
-	#fixaSpacing {
-		display: none;
-	}
+  #fixaSpacing {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-	/*for computer*/
-	.wrapper {
-		position: absolute;
-		right: 20vw;
-		width: 80vw;
+  /*for computer*/
+  .wrapper {
+    position: absolute;
+    right: 20vw;
+    width: 80vw;
 
-		display: grid;
-		grid-template-columns: 5% 95%;
-		grid-template-rows: 15% 85%;
-		grid-template-areas:
-			"hd hd"
-			"mg co";
-	}
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+      "hd hd"
+      "mg co";
+  }
 
-	.menu-button {
-		display: none;
-	}
+  .menu-button {
+    display: none;
+  }
 
-	.menu {
-		right: 0;
-		width: 20vw;
-	}
+  .menu {
+    right: 0;
+    width: 20vw;
+  }
 
-	header {
-		grid-area: hd;
-		display: flex;
-		justify-content: space-between;
-	}
+  header {
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+  }
 
-	.content {
-		grid-area: co;
-	}
+  .content {
+    grid-area: co;
+  }
 
-	.marigin {
-		grid-area: mg;
-	}
+  .marigin {
+    grid-area: mg;
+  }
 
-	img {
-		height: 100%;
-	}
+  img {
+    height: 100%;
+  }
 
-	#fixaSpacing {
-		/*width of logo img*/
-	}
+  #fixaSpacing {
+    /*width of logo img*/
+  }
 }
