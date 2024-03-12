@@ -1,6 +1,6 @@
 @font-face {
   font-family: openSans;
-  src: url(../misc/open_sans/OpenSans-VariableFont_wdth\wght.ttf);
+  src: url(../misc/open_sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 body,
@@ -31,17 +31,23 @@ body {
 header {
   background-color: rgb(54, 55, 63);
   box-shadow: 5px 0px 10px black;
-  height: 20vh;
 }
 
 p,
 h1,
-h2 {
+h2,
+h3 {
   color: rgb(192, 196, 207);
   font-family: openSans;
   text-align: center;
 	margin-left: 10px;
 	margin-right: 10px;
+  
+}
+
+li {
+  color: rgb(192, 196, 207);
+  font-family: openSans;
 }
 
 .divider {
@@ -135,7 +141,7 @@ li {
 
     display: grid;
     grid-template-columns: 5% 95%;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 15vh auto;
     grid-template-areas:
       "hd hd"
       "mg co";
@@ -154,6 +160,7 @@ li {
     grid-area: hd;
     display: flex;
     justify-content: space-between;
+    
   }
 
   .content {
@@ -163,6 +170,12 @@ li {
   .marigin {
     grid-area: mg;
   }
+
+  /*
+  header img{
+    height: 100%;
+  }
+  */
 
   img {
     height: 100%;
