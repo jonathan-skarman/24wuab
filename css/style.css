@@ -23,6 +23,7 @@ ul {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+/*scrollbar hider code copied from w3 school*/
 
 body {
   background-color: rgb(42, 43, 51);
@@ -39,14 +40,20 @@ h2,
 h3 {
   color: rgb(192, 196, 207);
   font-family: openSans;
-  text-align: center;
+  
 	margin-left: 10px;
 	margin-right: 10px;
-  
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 
 .content img{
-  height: 40vh;
+  /*height: 40vh;*/
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -59,7 +66,7 @@ li {
 }
 
 .divider {
-  width: 100px;
+  width: 30vw;
   height: 0px;
   border: 1px;
   border-style: solid;
@@ -138,6 +145,10 @@ li {
   #fixaSpacing {
     display: none;
   }
+
+  .content img {
+    width: 80vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -191,5 +202,9 @@ li {
 
   #fixaSpacing {
     /*width of logo img*/
+  }
+
+  .content img {
+    width: 60vw;
   }
 }
