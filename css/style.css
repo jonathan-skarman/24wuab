@@ -65,6 +65,10 @@ li {
   font-family: openSans;
 }
 
+.lighter {
+  background-color: rgb(46, 47, 56);
+}
+
 .divider {
   width: 30vw;
   height: 0px;
@@ -72,6 +76,8 @@ li {
   border-style: solid;
   color: aqua;
   margin: auto;
+  margin-top: 2cap;
+  margin-bottom: 2cap;
 }
 
 nav a {
