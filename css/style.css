@@ -67,6 +67,13 @@ li {
 
 .lighter {
   background-color: rgb(46, 47, 56);
+  margin-top: 2cap;
+  margin-bottom: 2cap;
+}
+
+.darker {
+  margin-top: 2cap;
+  margin-bottom: 2cap;
 }
 
 .divider {
@@ -76,8 +83,6 @@ li {
   border-style: solid;
   color: aqua;
   margin: auto;
-  margin-top: 2cap;
-  margin-bottom: 2cap;
 }
 
 nav a {
